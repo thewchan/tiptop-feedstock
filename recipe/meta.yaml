@@ -22,14 +22,15 @@ requirements:
     - flit-core
     - pip
     - python >=3.7
+    - textual >=0.1.14,<0.2
   run:
     - distro
     - importlib-metadata
     - psutil
     - py-cpuinfo
     - python >=3.7
-    - rich
-    - textual
+    - rich >=11.0.0
+    - textual >=0.1.14,<0.2
 
 test:
   imports:
