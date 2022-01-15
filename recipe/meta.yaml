@@ -19,6 +19,7 @@ build:
 
 requirements:
   host:
+    - distro
     - flit-core
     - pip
     - psutil
