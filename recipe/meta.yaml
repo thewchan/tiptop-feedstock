@@ -36,13 +36,17 @@ requirements:
     - textual >=0.1.14,<0.2
 
 test:
+  source_files:
+    - tests
   imports:
     - tiptop
   commands:
     - pip check
     - tiptop -h
+    - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/nschloe/tiptop
