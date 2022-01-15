@@ -21,6 +21,7 @@ requirements:
   host:
     - flit-core
     - pip
+    - py-cpuinfo
     - python >=3.7
     - textual >=0.1.14,<0.2
   run:
