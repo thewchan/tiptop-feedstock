@@ -28,7 +28,6 @@ requirements:
     - textual >=0.1.14,<0.2
   run:
     - distro
-    - importlib-metadata
     - psutil
     - py-cpuinfo
     - python >=3.7
