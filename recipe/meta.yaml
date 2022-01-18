@@ -1,5 +1,5 @@
 {% set name = "tiptop" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tiptop-{{ version }}.tar.gz
-  sha256: 967a6a41d13e8837ed05b04571093627c8bd352ac255412abe8b978edfda9b6f
+  sha256: 1a98f849d17d3ae44e622a6d4db2d1bbf750c27a47488723b751fe5ee366166f
 
 build:
   noarch: python
@@ -28,7 +28,6 @@ requirements:
     - textual >=0.1.14,<0.2
   run:
     - distro
-    - importlib-metadata
     - psutil
     - py-cpuinfo
     - python >=3.7
