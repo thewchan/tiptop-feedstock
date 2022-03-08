@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tiptop = tiptop._app:run
@@ -25,14 +25,14 @@ requirements:
     - psutil
     - py-cpuinfo
     - python >=3.7
-    - textual >=0.1.14,<0.2
+    - textual >=0.1.15,<0.2
   run:
     - distro
     - psutil
     - py-cpuinfo
     - python >=3.7
     - rich >=11.0.0
-    - textual >=0.1.14,<0.2
+    - textual >=0.1.15,<0.2
 
 test:
   source_files:
