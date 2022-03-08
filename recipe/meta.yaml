@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - distro
-    - flit-core
+    - flit-core >=3.2,<4
     - pip
     - psutil
     - py-cpuinfo
