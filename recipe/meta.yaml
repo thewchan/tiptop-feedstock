@@ -1,5 +1,5 @@
 {% set name = "tiptop" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tiptop-{{ version }}.tar.gz
-  sha256: a13a520116a5c1860af2a4ce93189fbb10063c334cb0ed4ab70c76196ba07355
+  sha256: b8ef2910b9b64e9642a292e7e1a0c00e73421cdfe9967fa8a857467a168fe75f
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - distro
-    - flit-core
+    - flit-core >=3.2,<4
     - pip
     - psutil
     - py-cpuinfo
@@ -32,7 +32,7 @@ requirements:
     - py-cpuinfo
     - python >=3.7
     - rich >=11.0.0
-    - textual >=0.1.15,<0.2
+    - textual >=0.1.14,<0.2
 
 test:
   source_files:
