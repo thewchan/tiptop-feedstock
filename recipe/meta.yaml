@@ -27,6 +27,7 @@ requirements:
     - python >=3.7
     - textual >=0.1.14,<0.2
   run:
+    - distro
     - psutil
     - python >=3.7
     - rich >=11.0.0
